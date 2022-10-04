@@ -5,9 +5,9 @@ import streamlit as st
 #Function for QR-Code generation
 def gen_qrcode(link):
     qr_code = pyqrcode.create(link)
-    qr_code.png('src/qr-code-link.png', scale=3)
+    #
 
-    st.image('src/qr-code-link.png')
+    st.image(qr_code.png('src/qr-code-link.png', scale=3))
 
 #Streamlit Form
 with st.form("my_form", clear_on_submit=True):
