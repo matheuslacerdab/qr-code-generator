@@ -6,11 +6,8 @@ import base64
 #Function for QR-Code generation
 def gen_qrcode(link):
     qr_code = pyqrcode.create(link)
-    #qr_code.show()
-    #qr_code.png('qr-code-link.png', scale=3)
-    img = base64.b64decode(qr_code.png_as_base64_str(scale=3))
 
-    st.image(img)
+    st.image(base64.b64decode(qr_code.png_as_base64_str(scale=5)))
 
 #Streamlit Form
 with st.form("my_form", clear_on_submit=True):

@@ -10,5 +10,7 @@ RUN pip3 install streamlit
 
 RUN pip3 install pyqrcode
 
+RUN pip3 install pypng
+
 #CMD ["streamlit", "run", "app.py"]
 CMD streamlit run --server.port $PORT app.py
