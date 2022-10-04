@@ -1,1 +1,1 @@
-web: streamlit run app.py --server.port 5000
+worker: streamlit run app.py --server.port 5000
