@@ -6,11 +6,7 @@ COPY . /usr/src/app
 
 WORKDIR /usr/src/app
 
-RUN pip3 install streamlit
-
-RUN pip3 install pyqrcode
-
-RUN pip3 install pypng
+RUN pip3 install -r requirements.txt
 
 #CMD ["streamlit", "run", "app.py"]
 CMD streamlit run --server.port $PORT app.py
