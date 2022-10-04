@@ -1,5 +1,4 @@
 #Importing the libraries
-from sklearn.preprocessing import scale
 import pyqrcode
 import streamlit as st
 import base64
