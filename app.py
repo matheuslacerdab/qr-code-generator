@@ -9,7 +9,6 @@ def gen_qrcode(link):
 
     st.image('src/qr-code-link.png')
 
-
 #Streamlit Form
 with st.form("my_form", clear_on_submit=True):
     st.write('Gerador de QR-Code')
