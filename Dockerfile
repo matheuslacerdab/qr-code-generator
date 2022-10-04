@@ -10,7 +10,5 @@ RUN pip3 install streamlit
 
 RUN pip3 install pyqrcode
 
-RUN pip3 install base64
-
 #CMD ["streamlit", "run", "app.py"]
 CMD streamlit run --server.port $PORT app.py
